@@ -18,5 +18,8 @@ export const GlobalStyle = createGlobalStyle`
     a, p {
         color: ${colorStack.white};
         font-size: 1rem;
+        margin: 0 35px;
+        padding-top: 25px;
         text-decoration: none;
+        text-transform: uppercase;
     }`

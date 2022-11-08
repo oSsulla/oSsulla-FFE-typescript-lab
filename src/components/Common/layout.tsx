@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import styled from 'styled-components';
-// import {TopMenu} from './TopMenu';
+import { TopMenu } from './TopMenu';
  
 const Wrapper = styled.div`
     width:100%;
@@ -18,16 +18,13 @@ interface IProps{
     children:JSX.Element;
 }
  
-export const Layout: FC<IProps>= props =>{
+export const Layout: FC<IProps>= props => {
     return(
         <Wrapper>
-            {/* <TopMenu> */}
-                <div>
-                    <Content>
-                        {props.children}
-                    </Content>
-                </div>
-            {/* </TopMenu> */}
+            <TopMenu />
+                <Content>
+                    {props.children}
+                </Content>
         </Wrapper>
-    )
+    );
 }

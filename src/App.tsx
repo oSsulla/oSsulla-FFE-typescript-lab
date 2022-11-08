@@ -12,9 +12,10 @@ export const App: FC = () => {
     <>
     <GlobalStyle/>
     <BrowserRouter>
-      <div>
-        <Link to="posts">Posts</Link>
-        <Link to="/">Home</Link>
+      <div className ="container">
+        <img src="/src/img/check.png"></img>
+        <Link to="posts"> Posts </Link>
+        <Link to="/"> Home </Link>
       </div>
       <Layout>
       <Routes>
